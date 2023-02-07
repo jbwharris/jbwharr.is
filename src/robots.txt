@@ -1,0 +1,4 @@
+Sitemap: https://jbwharr.is/sitemap.xml
+
+User-agent: *
+Disallow:

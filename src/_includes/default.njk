@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} - jbwharr.is</title>
+  <script src="https://kit.fontawesome.com/e941d543a7.js" crossorigin="anonymous"></script>
+  <meta property="og:title" content="jbwharr.is - ">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="jbwharr.is">
+  <meta property="og:image" content="{% if socialthumb %}{{ socialthumb }}{% else %}/img/social-thumb.jpg{% endif %}">
+  <meta property="og:url" content="https://jbwharr.is">
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{% if socialthumb %}{{ socialthumb }}{% else %}/img/social-thumb.jpg{% endif %}">
+  <meta name="twitter:site" content="@jbwharris">
+  <meta name="twitter:image:alt" content="{{ description }}">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#D73B1D" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#D73B1D" />
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+  <link rel="icon" href="{{ '/img/favicon.ico' | url }}" type="image/ico" />
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js "></script>
+  <!-- Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Montagu+Slab:opsz,wght@16..144,400;16..144,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  {% include "./partials/navbar.njk" %}
+  <!-- Masthead-->
+  <header class="masthead">
+    {% if frontpage == true %}
+    <div class="container px-4 px-lg-5 h-100">
+      <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-8 align-self-center">
+          <h1>
+            <span class="heading-line heading-line-first"><span class="heading-line-gradient">Blogging since</span></span>
+            <span class="heading-line heading-line-second"><span class="heading-line-gradient">before it was</span></span>
+            <span class="heading-line heading-line-third"><span class="heading-line-gradient">called blogging</span></span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </header>
+  <section class="position-relative" id="main">
+    <div class="custom-shape top white"></div>
+    <div class="custom-shape bg top white"></div>
+    <div class="container py-5">
+      <div class="row">
+        {{ content | safe }}
+      </div>
+    </div>
+    <div class="custom-shape bottom white"></div>
+    <div class="custom-shape bg bottom white"></div>
+  </section>
+  {% include "./partials/footer.njk" %}
+</body>
+
+</html>

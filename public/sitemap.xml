@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	
+	<url>
+		<loc>/blog/posts/january-mixtape/</loc>
+		<lastmod>2023-01-01T13:00:00.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	
+	
+	
+	<url>
+		<loc>/blog/</loc>
+		<lastmod>2023-01-23T18:24:13.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	
+	
+	
+	<url>
+		<loc>/contact/</loc>
+		<lastmod>2023-01-23T18:24:13.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	
+	
+	
+	<url>
+		<loc>/</loc>
+		<lastmod>2023-01-23T18:24:13.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	
+	
+	
+	<url>
+		<loc>/blog/posts/its-been-awhile/</loc>
+		<lastmod>2023-01-26T15:00:00.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	
+	
+	
+	<url>
+		<loc>/blog/posts/february-2023-mixtape/</loc>
+		<lastmod>2023-02-01T13:00:00.000Z</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	
+	
+</urlset>

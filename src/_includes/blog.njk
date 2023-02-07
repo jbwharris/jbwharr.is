@@ -1,0 +1,32 @@
+---
+title: Blog Layout
+layout: default
+---
+<div class="container">
+    <main role="main" class="">
+        <div class="row">
+            <article class="col-md-9">
+                <h1 class="font-bold text-5xl mb-4">{{title}}</h1>
+                {{ content | safe }}
+                <div class="bg-light border p-4 mt-5">
+                    <h5>About James</h5>
+                    James Harris is a frontend web developer and graphic designer from Cambridge, Ontario. He's a blogger, mixtape maker, chronic scrobbler, sci-fi geek & dad to a wonderful daughter.
+                </div>
+            </article>
+            <aside class="col-md-3 mt-md-5 pt-5">
+                <p><em>{{ content | wordStats }}</em></p>
+                {% if tags %}
+                <h4>Tags</h4>
+                <p>{% set comma = joiner() %}
+                    {% for tag in tags -%}
+                    {% if tag !== 'posts' %}
+                    {{ comma() }} <span class="tag">{{ tag }}</span>
+                    {% endif %}
+                    {%- endfor %}</p>
+                {% endif %}
+                <h4>Published</h4>
+                <p>{{ page.date }}</p>
+            </aside>
+        </div>
+    </main>
+</div>
